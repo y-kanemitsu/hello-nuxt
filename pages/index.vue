@@ -1,6 +1,5 @@
 <template>
-  <h1>Hello, Nuxt!!
-      asss
-      
-  </h1>
+    <h1>
+        商品配送システム    
+    </h1>
 </template>

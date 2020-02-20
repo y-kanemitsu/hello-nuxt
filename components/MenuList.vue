@@ -28,7 +28,7 @@
         <v-toolbar app dark color="primary">
             <v-toolbar-side-icon  @click="drawer = !drawer"></v-toolbar-side-icon>
             <v-toolbar-title>
-                Item Management System
+                配送 Management System
             </v-toolbar-title>
         </v-toolbar>
     </div>
