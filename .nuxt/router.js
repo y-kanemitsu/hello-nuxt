@@ -2,12 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _6164d3f3 = () => interopDefault(import('..\\pages\\items\\index.vue' /* webpackChunkName: "pages_items_index" */))
-const _37e938f7 = () => interopDefault(import('..\\pages\\schedules\\index.vue' /* webpackChunkName: "pages_schedules_index" */))
-const _e8b9e7fe = () => interopDefault(import('..\\pages\\items\\new.vue' /* webpackChunkName: "pages_items_new" */))
-const _79763bf6 = () => interopDefault(import('..\\pages\\schedules\\new.vue' /* webpackChunkName: "pages_schedules_new" */))
-const _77ed371b = () => interopDefault(import('..\\pages\\items\\_id.vue' /* webpackChunkName: "pages_items__id" */))
-const _37c4f5c1 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
+const _4be4bdee = () => interopDefault(import('..\\pages\\items\\index.vue' /* webpackChunkName: "pages_items_index" */))
+const _a7c4a51c = () => interopDefault(import('..\\pages\\schedules\\index.vue' /* webpackChunkName: "pages_schedules_index" */))
+const _0b7b38bc = () => interopDefault(import('..\\pages\\items\\new.vue' /* webpackChunkName: "pages_items_new" */))
+const _0d723940 = () => interopDefault(import('..\\pages\\schedules\\new.vue' /* webpackChunkName: "pages_schedules_new" */))
+const _10753854 = () => interopDefault(import('..\\pages\\items\\_id.vue' /* webpackChunkName: "pages_items__id" */))
+const _0c87374c = () => interopDefault(import('..\\pages\\schedules\\_id.vue' /* webpackChunkName: "pages_schedules__id" */))
+const _5d26ffb4 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
 
@@ -68,27 +69,31 @@ export function createRouter() {
 
     routes: [{
       path: "/items",
-      component: _6164d3f3,
+      component: _4be4bdee,
       name: "items"
     }, {
       path: "/schedules",
-      component: _37e938f7,
+      component: _a7c4a51c,
       name: "schedules"
     }, {
       path: "/items/new",
-      component: _e8b9e7fe,
+      component: _0b7b38bc,
       name: "items-new"
     }, {
       path: "/schedules/new",
-      component: _79763bf6,
+      component: _0d723940,
       name: "schedules-new"
     }, {
       path: "/items/:id",
-      component: _77ed371b,
+      component: _10753854,
       name: "items-id"
     }, {
+      path: "/schedules/:id",
+      component: _0c87374c,
+      name: "schedules-id"
+    }, {
       path: "/",
-      component: _37c4f5c1,
+      component: _5d26ffb4,
       name: "index"
     }],
 

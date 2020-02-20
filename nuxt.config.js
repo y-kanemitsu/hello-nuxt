@@ -1,6 +1,18 @@
 module.exports = {
+    mode: 'universal',
     modules: [
         "@nuxtjs/vuetify"
+    ],
+    
+    /*
+    ** Plugins to load before mounting the App
+    */
+    plugins: [
+        // 以下を追記
+        { 
+            src: '~/plugins/vue-full-calendar', 
+            ssr: false 
+        }
     ],
     vuetify: {
         theme: {

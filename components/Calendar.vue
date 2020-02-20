@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style>
-@import '~/node_modules/@fullcalendar/core/main.css';
-@import '~/node_modules/@fullcalendar/daygrid/main.css';
-@import '~/node_modules/@fullcalendar/timegrid/main.css';
+    @import '~/node_modules/@fullcalendar/core/main.css';
+    @import '~/node_modules/@fullcalendar/daygrid/main.css';
+    @import '~/node_modules/@fullcalendar/timegrid/main.css';
 </style>

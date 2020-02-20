@@ -11,7 +11,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_vuetify_58797906 from 'nuxt_plugin_vuetify_58797906' // Source: ./vuetify.js
+import nuxt_plugin_vuetify_02c47278 from 'nuxt_plugin_vuetify_02c47278' // Source: ./vuetify.js
+import nuxt_plugin_vuefullcalendar_4a313802 from 'nuxt_plugin_vuefullcalendar_4a313802' // Source: ..\\plugins\\vue-full-calendar (ssr: false)
 
 // Component: <no-ssr>
 Vue.component(NoSSR.name, NoSSR)
@@ -129,7 +130,11 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_vuetify_58797906 === 'function') await nuxt_plugin_vuetify_58797906(app.context, inject)
+  if (typeof nuxt_plugin_vuetify_02c47278 === 'function') await nuxt_plugin_vuetify_02c47278(app.context, inject)
+
+  if (process.client) {
+    if (typeof nuxt_plugin_vuefullcalendar_4a313802 === 'function') await nuxt_plugin_vuefullcalendar_4a313802(app.context, inject)
+  }
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {
