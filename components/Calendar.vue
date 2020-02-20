@@ -8,6 +8,7 @@
         :events="calendarEvents"
         @dateClick="handleDateClick"
     />
+    
 </template>
 
 <script>
@@ -16,6 +17,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import jaLocale from '@fullcalendar/core/locales/ja' // 日本語化用
+import calendarEvents from '~/assets/json/schedule.json'
 
 export default {
     components: {
@@ -23,6 +25,7 @@ export default {
     },
     data () {
         return {
+            calendarEvents: calendarEvents,
             locale: jaLocale, // 日本語化
             // カレンダーヘッダーのデザイン
             calendarHeader: {
@@ -38,23 +41,23 @@ export default {
                 interactionPlugin
             ],
             // カレンダーに表示するスケジュール一覧
-            calendarEvents:  [
-                {
-                    title: '報告会',
-                    start: '2020-02-20T10:00:00',
-                    end : '2020-03-09T12:30:00',
-                },
-                {
-                    title: 'ミーティング',
-                    start: '2020-02-12T10:30:00',
-                    end : '2020-02-12T12:30:00',
-                },
-                {
-                    title: '打ち合わせ',
-                    start: '2020-02-18T13:30:00',
-                    end : '2020-02-18T14:30:00',
-                },
-            ]
+            // calendarEvents:  [
+            //     {
+            //         title: '報告会',
+            //         start: '2020-02-20T10:00:00',
+            //         end : '2020-03-09T12:30:00',
+            //     },
+            //     {
+            //         title: 'ミーティング',
+            //         start: '2020-02-12T10:30:00',
+            //         end : '2020-02-12T12:30:00',
+            //     },
+            //     {
+            //         title: '打ち合わせ',
+            //         start: '2020-02-18T13:30:00',
+            //         end : '2020-02-18T14:30:00',
+            //     },
+            // ]
         }
     },
     methods: {

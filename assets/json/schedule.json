@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "ミーティング",
+        "start": "2020-02-12T10:30:00",
+        "end": "2020-02-30T11:30:00",
+        "classNames": "yellow",
+        "url": "https://virment.com",
+        "extendedProps": {
+        "department": "総務部"
+        },
+        "description": "総務部とのミーティング"
+    },
+    {
+        "id": 2,
+        "title": "打ち合わせ",
+        "start": "2020-02-29T10:30:00",
+        "end": "2020-02-30T11:30:00",
+        "classNames": "red",
+        "url": "https://virment.com",
+        "extendedProps": {
+        "department": "A社"
+        },
+        "description": "Aさんとのミーティング"
+    }
+]
