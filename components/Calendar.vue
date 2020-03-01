@@ -18,6 +18,8 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import jaLocale from '@fullcalendar/core/locales/ja' // 日本語化用
 import calendarEvents from '~/assets/json/schedule.json'
+import { Calendar } from '@fullcalendar/core'
+// import bootstrapPlugin from '@fullcalendar/bootstrap'
 
 export default {
     components: {
@@ -51,7 +53,7 @@ export default {
                     allDay: arg.allDay
                 })
             }
-        }
+        },
     }
 }
 </script>
@@ -60,4 +62,9 @@ export default {
     @import '~/node_modules/@fullcalendar/core/main.css';
     @import '~/node_modules/@fullcalendar/daygrid/main.css';
     @import '~/node_modules/@fullcalendar/timegrid/main.css';
+    @import '~/node_modules/@fullcalendar/core/main.css';
+    @import '~/node_modules/@fullcalendar/daygrid/main.css'; 
+    @import '~/node_modules/@fullcalendar/bootstrap/main.css';
+    @import '~/assets/css/variables.scss';
+    
 </style>

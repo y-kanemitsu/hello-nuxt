@@ -15,6 +15,9 @@ Build Setup
 # install node.js(10↑)
 https://nodejs.org/ja/
 
+# git clone
+$ clone https://github.com/y-kanemitsu/hello-nuxt.git
+
 # install dependencies
 $ npm install
 
@@ -26,12 +29,12 @@ $ npm install vue
 
 # ターミナルを二窓用意します。
 
-# 99-api-mockのディレクトリに移動
+$ cd 99-api-mock
 $ npm install
 
 $ npm start
 
-# 04-vuetifyのディレクトリに移動
+$ cd ~
 $ npm install
 $ npm start
 
@@ -41,6 +44,6 @@ $ npm start
 このリポジトリは、以下の環境で実装されています。
 正常に動作しない場合は、バージョンを確認してください。
 
-* node v10.14.1
-* npm 6.4.1
+* node v12.4.0
+* npm 6.9.0
 * nuxt 2.3.4

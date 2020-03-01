@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{199:function(n,t,e){"use strict";e.r(t);var s=e(10),l=Object(s.a)({},(function(){var n=this.$createElement;return(this._self._c||n)("h1",[this._v("\n    商品配送システム    \n")])}),[],!1,null,null,null);t.default=l.exports}}]);

@@ -44,17 +44,18 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios' //99-api-mockを使う場合こちら
+import itemsData from '~/assets/json/items.json'
 
 export default {
     data: function() {
         return {
-            items: []
+            items: itemsData.items
         };
     },
-    asyncData: async function () {
-        const response = await axios.get("http://localhost:3001/items")
-        return { items: response.data }
-    }
+    // asyncData: async function () { //99-api-mockを使う場合こちら
+    //     const response = await axios.get("http://localhost:3001/items")
+    //     return { items: response.data }
+    // }
 };
 </script>

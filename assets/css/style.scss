@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+th.fc-day-header.fc-widget-header.fc-sat {
+    background-color: $Blue;
+}
+th.fc-day-header.fc-widget-header.fc-sun {
+    background-color: $Red;
+}
+
+td.fc-day.fc-widget-content.fc-today {
+    background-color: $Today;
+}

@@ -1,0 +1,22 @@
+$Black: #3E3A39;
+
+$Gray: #F8F8F8;
+$Red: #E2322D;
+$Blue:  #2CA6E0;
+$Green: #5EDBB7;
+
+$ALL: #FF801E;
+$Today: #fff2e5;
+
+
+@mixin mq {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin mq-mn {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
