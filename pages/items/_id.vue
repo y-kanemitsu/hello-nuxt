@@ -21,17 +21,19 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
+import itemsData from '~/assets/json/items.json'
+
 
 export default {
     data: function() {
         return {
-            item: {}
+            item: itemsData.item
         };
     },
-    asyncData: async function (context) {
-        const response = await axios.get(`http://localhost:3001/items/${context.params.id}`)
-        return { item: response.data }
-    }
+    // asyncData: async function (context) {
+    //     const response = await axios.get(`http://localhost:3001/items/${context.params.id}`)
+    //     return { item: response.data }
+    // }
 };
 </script>

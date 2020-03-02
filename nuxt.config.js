@@ -1,7 +1,10 @@
 const { resolve } = require('path');
+const itemsList = require('./assets/json/items.json');
+const carendarsList = require('./assets/json/schedule.json')
 // const iweee = require('./iweee.config.json');
 
-module.exports = {
+import axios from 'axios';
+export default {
     mode: "spa",
     modules: [
         "@nuxtjs/vuetify"
@@ -25,9 +28,15 @@ module.exports = {
                 hid: "description",
                 name: "description",
                 content: "Delivery Management System"
+            },
+            { 
+                rel: 'icon', 
+                type: 'image/x-icon', 
+                href: '/nuxt-sample/favicon.ico' 
             }
         ],
     },
+
     /*
     ** Global CSS
     */
@@ -78,10 +87,20 @@ module.exports = {
       },
       vendor: [ 'material-design-lite/material.min.js' ]
     },
+    
     generate: {
-      dir: resolve(__dirname, './dist' ),
+        fallback: true,
+        dir: resolve(__dirname, './dist' ),
+        routes() {
+            return itemsList.items.map(item => {
+                return `items/${item.id}`
+            })
+        },
+        routesSchedules() {
+            return carendarsList.Schedule.map(Schedule => {
+                return `schedules/${Schedule.id}`
+            })
+        }
     },
-    // router: {
-    //   base: process.env.NODE_ENV === 'dev' ? '/' : iweee.serverPath,
-    // }
+
 }

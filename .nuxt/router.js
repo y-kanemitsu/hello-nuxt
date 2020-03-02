@@ -7,7 +7,6 @@ const _a7c4a51c = () => interopDefault(import('..\\pages\\schedules\\index.vue' 
 const _0b7b38bc = () => interopDefault(import('..\\pages\\items\\new.vue' /* webpackChunkName: "pages_items_new" */))
 const _0d723940 = () => interopDefault(import('..\\pages\\schedules\\new.vue' /* webpackChunkName: "pages_schedules_new" */))
 const _10753854 = () => interopDefault(import('..\\pages\\items\\_id.vue' /* webpackChunkName: "pages_items__id" */))
-const _0c87374c = () => interopDefault(import('..\\pages\\schedules\\_id.vue' /* webpackChunkName: "pages_schedules__id" */))
 const _5d26ffb4 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
@@ -87,10 +86,6 @@ export function createRouter() {
       path: "/items/:id",
       component: _10753854,
       name: "items-id"
-    }, {
-      path: "/schedules/:id",
-      component: _0c87374c,
-      name: "schedules-id"
     }, {
       path: "/",
       component: _5d26ffb4,

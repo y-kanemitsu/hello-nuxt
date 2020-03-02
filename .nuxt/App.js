@@ -14,7 +14,7 @@ import _6f6c098b from '..\\layouts\\default.vue'
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"Delivery Management System","titleTemplate":"Delivery Management System | %s","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Delivery Management System"}],"link":[{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700|Material+Icons"}],"style":[],"script":[]},
+  head: {"title":"Delivery Management System","titleTemplate":"Delivery Management System | %s","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Delivery Management System"},{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fnuxt-sample\u002Ffavicon.ico"}],"link":[{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700|Material+Icons"}],"style":[],"script":[]},
 
   render(h, props) {
     const loadingEl = h('nuxt-loading', { ref: 'loading' })
@@ -84,6 +84,8 @@ export default {
     },
 
     setLayout(layout) {
+      if(layout && typeof layout !== 'string') throw new Error('[nuxt] Avoid using non-string value as layout property.')
+
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }

@@ -23,9 +23,9 @@
                         {{ item.id }}
                     </td>
                     <td>
-                        <router-link :to="'/items/' + item.id">
+                        <nuxt-link :to="'/items/' + item.id">
                             {{ item.name }}
-                        </router-link>
+                        </nuxt-link>
                     </td>
                     <td>
                         {{ item.price }}

@@ -1,5 +1,6 @@
 {
     "name": "hello-nuxt",
+    "generate": "nuxt generate && rm -rf gh-pages/* && cp -r dist/ gh-pages/",
     "dependencies": {
         "@fullcalendar/bootstrap": "^4.4.0",
         "@fullcalendar/core": "^4.4.0",

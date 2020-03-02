@@ -27,16 +27,20 @@ $ npm -v
 # 最新の安定版 Vue.js Install
 $ npm install vue
 
-# ターミナルを二窓用意します。
+// # ターミナルを二窓用意します。
 
-$ cd 99-api-mock
-$ npm install
+// $ cd 99-api-mock
+// $ npm install
 
 $ npm start
 
 $ cd ~
 $ npm install
 $ npm start
+
+# 静的サイトgenerate
+
+$ npm run generate
 
 ```
 
