@@ -15,6 +15,9 @@ Build Setup
 # install node.js(10↑)
 https://nodejs.org/ja/
 
+# Create Directory
+$ mkdir hello-nuxt
+
 # git clone
 $ clone https://github.com/y-kanemitsu/hello-nuxt.git
 
