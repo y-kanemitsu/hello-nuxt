@@ -18,8 +18,14 @@ https://nodejs.org/ja/
 # Create Directory
 $ mkdir hello-nuxt
 
-# git clone
-$ clone https://github.com/y-kanemitsu/hello-nuxt.git
+# Move Directory
+$ cd hello-nuxt
+
+# git init (or Download ZIP)
+$ git init
+
+# git clone (or Download ZIP)
+$ git clone https://github.com/y-kanemitsu/hello-nuxt.git
 
 # install dependencies
 $ npm install
