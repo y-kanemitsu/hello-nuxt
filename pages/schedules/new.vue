@@ -9,12 +9,12 @@
             </p>
             <img :src="avatar" alt="Avatar" class="image">
             <div>
-            <input
-                type="file"
-                id="avatar_name"
-                accept="image/jpeg, image/png"
-                @change="onImageChange"
-                />
+                <input
+                    type="file"
+                    id="avatar_name"
+                    accept="image/jpeg, image/png"
+                    @change="onImageChange"
+                    />
             </div>
         </label>
         <button @click="upload()">
