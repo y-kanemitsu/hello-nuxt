@@ -24,15 +24,13 @@ $ npm install
 # npm（Node Package Manager）のバージョンの確認
 $ npm -v 
 
-# 最新の安定版 Vue.js Install
-$ npm install vue
-
+// 以下は簡易APIにより、静的サイト生成時に上手く動作しない原因となる為、コメントアウトしております。
 // # ターミナルを二窓用意します。
 
 // $ cd 99-api-mock
 // $ npm install
 
-$ npm start
+***
 
 $ cd ~
 $ npm install
