@@ -15,7 +15,7 @@
         "typicons.font": "^2.0.9"
     },
     "devDependencies": {
-        "node-sass": "^4.13.1",
+        "node-sass": "^7.0.0",
         "sass-loader": "^8.0.2"
     },
     "scripts": {
